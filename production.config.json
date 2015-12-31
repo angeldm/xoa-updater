@@ -1,0 +1,9 @@
+{
+	"updateUrl": "https://xen-orchestra.com/update",
+	"pckgDir": "/tmp",
+	"migDir": "/usr/local/lib/node_modules/xoa-migrations",
+	"updateFile": "/var/lib/xoa-updater/update.json",
+	"updaterPort": 9001,
+	"registerUrl": "https://xen-orchestra.com/api",
+	"registerFile": "/var/lib/xoa-updater/registration.json"
+}

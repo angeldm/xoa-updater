@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      "/tmp/1449526563239/xoa-updater",
+      ""
+    ]
+  ],
+  "_from": "../../tmp/1449526563239/xoa-updater",
+  "_id": "xoa-updater@0.5.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/xoa-updater",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": null,
+    "raw": "/tmp/1449526563239/xoa-updater",
+    "rawSpec": "/tmp/1449526563239/xoa-updater",
+    "scope": null,
+    "spec": "/tmp/1449526563239/xoa-updater",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../../tmp/1449526563239/xoa-updater",
+  "_shasum": "65741a1f091a9c6141d3bd67a01080b32a11ca2f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/1449526563239/xoa-updater",
+  "_where": "",
+  "author": {
+    "email": "fabrice.marsaud@vates.fr",
+    "name": "Fabrice Marsaud"
+  },
+  "bin": {
+    "xoa-updater": "./index.js",
+    "xoa-updater-start": "./start.js"
+  },
+  "bundleDependencies": [
+    "@julien-f/json-rpc",
+    "@marsaud/stream-buffers",
+    "app-conf",
+    "babel",
+    "bluebird",
+    "chalk",
+    "fs-extra",
+    "hash-files",
+    "inquirer",
+    "jszip",
+    "lodash.assign",
+    "lodash.foreach",
+    "lodash.has",
+    "lodash.pick",
+    "log-symbols",
+    "make-error",
+    "migrate",
+    "request",
+    "semver",
+    "ws"
+  ],
+  "dependencies": {
+    "@julien-f/json-rpc": "^0.4.3",
+    "@marsaud/stream-buffers": "^2.2.0",
+    "app-conf": "^0.3.4",
+    "babel": "^4.7.8",
+    "bluebird": "^2.9.13",
+    "chalk": "^1.0.0",
+    "fs-extra": "^0.16.5",
+    "hash-files": "^1.0.0",
+    "inquirer": "^0.8.3",
+    "jszip": "^2.5.0",
+    "lodash.assign": "^3.0.0",
+    "lodash.foreach": "^3.0.3",
+    "lodash.has": "^3.0.0",
+    "lodash.pick": "^3.0.0",
+    "log-symbols": "^1.0.2",
+    "make-error": "^1.0.2",
+    "migrate": "^0.2.1",
+    "request": "^2.53.0",
+    "semver": "^4.3.6",
+    "ws": "^0.8.0"
+  },
+  "description": "Updater tool for XOA",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "leche": "^2.1.1",
+    "mocha": "^2.2.1"
+  },
+  "files": [
+    "README.md",
+    "cli.js",
+    "index.js",
+    "install.js",
+    "production.config.json",
+    "server.js",
+    "start.js",
+    "uninstall.js",
+    "xoa-updater.js",
+    "xoa-updater.service"
+  ],
+  "license": "aGPLv3",
+  "main": "index.js",
+  "name": "xoa-updater",
+  "optionalDependencies": {},
+  "readme": "# xoa-updater\n\n----\n## Usage\n\ninstall\n\n    npm i -g /path/to/xoa-update-package\n\nStart the server\n\n    xoa-updater-start\n\nCheck for updates (CLI)\n\n    xoa-updater\n\nPerform upgrade (CLI)\n\n    xoa-updater --upgrade\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git@git.vates.fr:vates/xoa-updater.git"
+  },
+  "scripts": {
+    "postinstall": "npm rebuild",
+    "start": "babel-node server.js",
+    "test": "mocha --require babel/register *.spec.js"
+  },
+  "version": "0.5.3"
+}

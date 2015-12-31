@@ -1,0 +1,11 @@
+# systemd service for XO-Updater.
+[Unit]
+Description= XOA Updater
+After=network-online.target
+[Service]
+ExecStart=/usr/local/bin/xoa-updater-start
+Restart=always
+SyslogIdentifier=xoa-updater
+EnvironmentFile=-/etc/xo-appliance/env
+[Install]
+WantedBy=multi-user.target
